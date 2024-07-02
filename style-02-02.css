@@ -1,0 +1,30 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.unordered{
+  list-style-type:'🦄 ';
+  
+}
+.unordered li:first-child,.unordered li:last-child{
+  background-color: blue;
+  color: white;
+}
+.unordered li:last-child a{color: black;}
+
+.ordered li:nth-child(odd){
+  background-color: aqua;
+}
+
+.ordered li:nth-child(3){
+  color: red;
+}
+.nested>li::marker{
+  content: '';
+}
+
