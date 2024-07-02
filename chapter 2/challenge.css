@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+h2,h3{
+  color:  #049DBF;
+  border-bottom: 2px dotted #049DBF;
+}
+.listimg {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.listimg img {
+  border-radius: 10px;
+  max-width: 100%;
+}
+/* style the metadata */
+.listimg dt {
+  font-weight: bold;
+  color: #049DBF;
+}
+.listimg dd {
+  margin: 0 0 1.5rem 0;
+}
+/* style ingredients list */
+ul li {
+  line-height: 2;
+}
+ul li::marker {
+    content: '🍦';
+}
+/* freezing equipment */
+.freezing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 420px;
+}
+.freezing dt {
+  font-weight: bold; 
+  color: #F28705;
+}
+
+.freezing dd {
+  grid-column-start: 2;
+  padding-bottom: 0.5rem;
+}
+ol li:first-child::marker{
+  content: '1️⃣ ';
+}
+ol li:nth-child(2)::marker{
+  content:'2️⃣ ' ;
+}
+ol li:nth-child(3)::marker{
+  content: '3️⃣ ';
+}
+ol li:nth-child(4)::marker{
+  content: '4️⃣ ' ;
+}
+ol li:nth-child(5)::marker{
+  content:  '5️⃣ ';
+}
+ol li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+footer{
+  background-color: #049DBF;
+  color:aliceblue;
+  padding: 1rem;
+}
+footer a {
+  color: #ffffdd;
+}
