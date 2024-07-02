@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+div{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+dd {
+  margin: 0;
+  grid-column-start:2;
+  padding: 0.5rem;
+}
+dt {
+  font-weight: bold;
+  grid-column-start: 1;
+  padding: 0.5rem;
+}
+div>dd:first-of-type{
+  grid-row-start:1;
+}
