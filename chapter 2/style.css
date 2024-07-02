@@ -1,0 +1,16 @@
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: rem;
+}
+p + ul{
+border: 2px dotted blue;
+background-color: aqua;
+}
+ol{
+  border: 1px solid green;
+  margin: 2rem auto;
+}
+ 
