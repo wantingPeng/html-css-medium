@@ -1,0 +1,122 @@
+:root{
+  --sky-blue: #02529C;
+  --snow-white: #FFFFFF;
+  --fire-red:  #DC1E35;
+ --radius: 10px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Fira Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+header{ 
+  text-align: center;
+  background-color: var(--sky-blue);
+}
+h1{
+ margin-top: 0; 
+   padding-top: 1rem; 
+   color: var(--snow-white); 
+
+}
+nav ul{
+  background-color: var(--fire-red);
+  list-style-type:  none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.5rem 0;
+  margin: 0;
+  border-top: 2px solid var(--snow-white);
+}
+nav a{
+  font-size: large;
+  font-weight:bold ;
+  text-decoration: none;
+  color: var(--snow-white);
+}
+main{
+padding:1rem ;
+}
+aside{
+  border: 2px solid #02529C;
+  border-radius: var(--radius);
+  background-color: var(--fire-red);
+}
+aside h3{
+  color: var(--fire-red);
+  
+  margin: 0;
+  padding: 0.4rem 0.5rem;
+  background-color:var(--snow-white)
+}
+aside dl{
+  line-height: 2rem;
+  padding-left: 0.5rem ;
+ 
+display: flex;
+justify-content: space-between;
+color:var(--snow-white);
+}
+aside dt{
+
+  font-weight: bold;
+}
+aside dd{
+  margin: 0;
+}
+figure{
+  width:50%;
+  margin: 0;
+  background-color: var(--sky-blue);
+  max-width: 512px;
+  border-radius: var(--radius);
+  float: right;
+  
+}
+.float{
+  display: flow-root;
+}
+figure img{
+  border-radius:var(--radius) var(--radius) 0 0 ;
+  max-width: 100%;
+
+}
+figcaption{
+  color: var(--snow-white);
+  padding: 1rem;
+}
+
+ul:has(li:nth-child(6)){
+  columns: 2;
+}
+ul:has(li:nth-child(11)){
+  columns: 3;
+}
+
+article footer{
+  border: 1px double #000;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eeeeee;
+  border-radius: var(--radius);
+}
+footer a{
+  color: var(--fire-red);
+}
+body>footer{
+  padding: 2rem 0;
+  background-color: var(--sky-blue);
+  color: var(--snow-white);
+  text-align: center;
+  border-top: 15px double var(--fire-red);
+}
+body>footer a{
+  color: var(--snow-white);
+}
+article :is(h2, h3:not(aside h3), h4, h5, h6) {
+  font-family: 'PT Serif', serif;
+}
