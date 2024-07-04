@@ -1,0 +1,124 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+p{
+  font-size: 1.2rem;
+}
+body{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: var(--regular-font);
+}
+:root{
+  --creep: 'Creepster', cursive;
+  --regular-font: 'Source Sans Pro', sans-serif;
+  --black: #00090D;
+  --ltgrey: #BFBFBF;
+  --yellow: #F2B90F;
+  --dkgrey: #6E736F;
+  --red: #BF2C53;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--creep);
+  color: #BF2C53;
+}
+header{
+  border: 1px solid black;
+  background-color:var(--black) ;
+  --red: #BF2C53;
+  --yellow: #F2B90F;
+}
+header h1{
+  padding: 0.7rem 0;
+ color: #F2B90F;
+ text-align: center;
+ font-size: 3rem;
+}
+header ul{
+  padding: 1rem;
+  margin: 0;
+background-color: #BF2C53;
+display: flex;
+justify-content:  space-evenly;
+font-size: 1.5rem;
+font-family: var(--creep);
+
+}
+ul>li{
+  list-style-type: none;
+ 
+}
+li a {
+  text-decoration: none;
+  color: var(--ltgrey);
+}
+li a:hover{
+  color: var(--yellow);
+
+}
+main>div:first-child{
+  border:2px solid #BF2C53;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+article{
+ 
+  padding:0 1rem ;
+}
+main section{
+  border: 2px solid black;
+  padding-left: 3rem;
+  background-color: #F2B90F;
+  font-size: 1.3rem;
+}
+section dl{
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+
+}
+dd{
+  margin: 0 0 2rem 0;
+}
+figure{
+  border: 3px dotted var(--yellow);
+  margin: 0;
+  color: var(--red);
+  font-weight: bold;
+}
+[target="_blank"]{
+  color: #BF2C53;
+  margin-left: 2.5rem;
+}
+
+dl:has(dt:nth-of-type(4)){
+  columns: 2;
+}
+article:last-child dt{
+  font-size: 1.2rem;
+  color: var(--red);
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  border-bottom:2px dotted var(--yellow) ;
+}
+footer{
+  background-color: var(--black);
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-top: 10px double var(--red);
+}
+footer p{
+  
+  text-align: center;
+  width: 50%;
+  margin: 3rem auto 1rem auto;
+}
+
+
+:is(footer) a{
+  color: #F2B90F;
+ 
+}

@@ -74,7 +74,7 @@ figure{
   background-color: var(--sky-blue);
   max-width: 512px;
   border-radius: var(--radius);
-  float: right;
+  flex-wrap: wrap;
   
 }
 .float{
